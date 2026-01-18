@@ -15,7 +15,7 @@
 
     $arr2 = [6,7,8,9,'10'];
 
-    $arrMerge = array_merge($arr, $arr2, ['a', true]); //aceita quantos argumentos for necessário
+    $arrMerge = array_merge($arr, $arr2, ['a', true]); //aceita quantos argumentos forem necessários
     print_r($arrMerge);
     echo "<br><br>";
 
