@@ -64,6 +64,30 @@
         echo "Honda é um veículo. <br>";
     }
 
+    abstract class TestandoAbstrata
+    {
+        public static function Teste()
+        {
+            echo "Esse método é de uma classe abstrata <br>";
+        }
+
+        abstract public function Teste2();
+    }
+
+    // $t = new TestandoAbstrata; não pode ser instanciada
+    TestandoAbstrata::Teste();
+
+    class Nova extends TestandoAbstrata
+    {
+        public function Teste2()
+        {
+            echo "Precisa estar implementado aqui <br>";
+        }
+    }
+
+    $n = new Nova;
+    $n->Teste2();
+
 
     interface Caracteristicas
     {
